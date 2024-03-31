@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    background: #e6b2c6;
+    background: -webkit-linear-gradient(to right, #e6b2c6, #d6e5fa);
+    background: linear-gradient(to right, #e6b2c6, #d6e5fa);
+    font-family: "Lato", sans-serif;
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.profile-card {
+    width: 400px;
+    height: 500px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #fefefe;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.profile .name {
+    margin-bottom: 0.3em;
+    font-size: 1.8em;
+    color: #141414;
+}
+
+.profile .occupation {
+    font-size: 1.4em !important;
+    font-weight: bold !important;
+    margin: 0;
+    color: #878787;
+}
+
+.profile .description {
+    color: #696969;
+}
+
+.profile p:last-child {
+    margin-top: 30px;
+}
+
+.contact-info {
+    font-size: 16px;
+    color: #444;
+    text-align: center;
+}
+
+.contact-info .contact-icon {
+    width: 24px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.contact-info .email,
+.contact-info .phone {
+    margin-top: 10px;
+}
+
+.contact-info .email a,
+.contact-info .phone a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-info .email a:hover,
+.contact-info .phone a:hover {
+    color: #0056b3;
+}

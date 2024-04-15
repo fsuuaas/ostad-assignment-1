@@ -9,15 +9,15 @@ class BankAccount {
 
     deposit(amount) {
         this.balance += amount;
-        console.log(`Deposited $${amount}. New balance: $${this.balance}`);
+        console.log(`Deposited: $${amount}. New balance: $${this.balance}`);
     }
 
     withdraw(amount) {
         if (amount > this.balance) {
-            console.log("Insufficient funds");
+            console.log(`Withdrawn: Insufficient funds to withdraw $${amount}.`);
         } else {
             this.balance -= amount;
-            console.log(`Withdrawn $${amount}. New balance: $${this.balance}`);
+            console.log(`Withdrawn: $${amount}. New balance: $${this.balance}`);
         }
     }
 
@@ -43,5 +43,5 @@ account1.displayAccountInfo();
 console.log();
 
 account2.deposit(500);
-account2.withdraw(1500);
+account2.withdraw(1600);
 account2.displayAccountInfo();
